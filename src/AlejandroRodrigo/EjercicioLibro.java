@@ -16,7 +16,7 @@ public class EjercicioLibro {
     public static File salida = new File("salida.txt");
 
     public static List<String> lecturaArchivo(int line_init, int line_final) throws IOException {
-        Path path = Paths.get("alice29.txt").toAbsolutePath();
+        Path path = Paths.get("../../../src/alice29.txt").toAbsolutePath();
         List<String> totalLineas = Files.readAllLines(path);
 
         return totalLineas.subList(line_init,line_final+1);
