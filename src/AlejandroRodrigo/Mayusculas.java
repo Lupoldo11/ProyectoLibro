@@ -6,6 +6,15 @@ import java.util.List;
 public class Mayusculas implements TransformadorTexto{
     static int line_final;
     static int line_init;
+    int linea_inicial;
+    int linea_final;
+
+    public Mayusculas(){}
+
+    public void introducirLineas(int linea_init, int linea_final){
+        this.linea_inicial=linea_init;
+        this.linea_final=linea_final;
+    }
 
     public static void main(String[] args) throws IOException {
         line_init = Integer.parseInt(args[0]);
