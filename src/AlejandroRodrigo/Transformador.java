@@ -10,7 +10,7 @@ public class Transformador{
         Transformador proceso = new Transformador(args[2]); //args[2]
         TransformadorTexto procesoConcreto = proceso.seleccion_proceso();
         procesoConcreto.introducirLineas(Integer.parseInt(args[0]),Integer.parseInt(args[1])); //Integer.parseInt(args[0]),Integer.parseInt(args[1])
-        procesoConcreto.transformador(EjercicioLibro.lecturaArchivo(Integer.parseInt(args[0]),Integer.parseInt(args[1])));
+        procesoConcreto.transformador(EjercicioLibroVariable.lecturaArchivo(Integer.parseInt(args[0]),Integer.parseInt(args[1])));
     }
 
     public Transformador(String programa){
