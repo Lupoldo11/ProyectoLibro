@@ -23,7 +23,7 @@ public class EjercicioLibro {
     }
 
     public static void lanzadorProcesos(Integer line_init, Integer line_final, String programa) throws InterruptedException, IOException {
-        ProcessBuilder pb = new ProcessBuilder("java", direccion_proceso, line_init.toString(), line_final.toString());
+        ProcessBuilder pb = new ProcessBuilder("java", direccion_proceso, line_init.toString(), line_final.toString(), programa);
         pb.directory(new File("./out/production/ProyectoLibro"));
         pb.redirectOutput(ProcessBuilder.Redirect.appendTo(salida));
         Process p = pb.start();
