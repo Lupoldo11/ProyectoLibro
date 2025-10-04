@@ -11,7 +11,7 @@ public class EjercicioLibro {
 
     public static int num_procesos = 5;
     public static int[] lines_init = {0,721,1443,2164,2885,3609};
-    public static String[] list_procesos = {"mayus","minus","mayus","minus","mayus"};
+    public static String[] list_procesos = {"mayus","minus","paco","minus","mayus"};
     public static String direccion_proceso = "AlejandroRodrigo."; //luego aquí +Transformador
     public static File salida = new File("salida.txt");
 
@@ -26,7 +26,7 @@ public class EjercicioLibro {
         switch (proceso){
             case "minus" -> {return "Minusculas";}
             case "mayus" -> {return "Mayusculas";}
-            //case "paco" -> {return "Reemplazador";}
+            case "paco" -> {return "Reemplazador";}
             default -> {return null;}
         }
     }
