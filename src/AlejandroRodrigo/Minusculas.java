@@ -3,21 +3,22 @@ package AlejandroRodrigo;
 import java.io.IOException;
 import java.util.List;
 
-public class Mayusculas implements TransformadorTexto{
+public class Minusculas implements TransformadorTexto {
     static int line_final;
     static int line_init;
 
     public static void main(String[] args) throws IOException {
         line_init = Integer.parseInt(args[0]);
         line_final = Integer.parseInt(args[1]);
-        Mayusculas proceso = new Mayusculas();
-        proceso.transformador(EjercicioLibro.lecturaArchivo(line_init,line_final));
+        Minusculas proceso = new Minusculas();
+        proceso.transformador(EjercicioLibro.lecturaArchivo(line_init, line_final));
     }
 
     @Override
     public void transformador(List<String> texto) {
-        for (String line: texto){
-            System.out.println(line.toUpperCase());
+        for (String line : texto) {
+            System.out.println(line.toLowerCase());
+
         }
     }
 }
