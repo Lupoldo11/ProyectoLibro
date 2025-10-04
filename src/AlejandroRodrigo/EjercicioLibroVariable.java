@@ -13,7 +13,7 @@ public class EjercicioLibroVariable {
     //public static int[] lines_init = {0,721,1443,2164,2885,3609};
     //public static String[] list_procesos = {"mayus","minus","paco","minus","mayus"};
     public static String direccion_proceso = "AlejandroRodrigo.Transformador"; //luego aquí +Transformador
-    public static File salida = new File("salida.txt");
+    public static File salida = new File("salidaLibroAlicia.txt");
 
     public static List<String> lecturaArchivo(int line_init, int line_final) throws IOException {
         Path path = Paths.get("../../../src/alice29.txt").toAbsolutePath();//"../../../src/alice29.txt" (normal url)
