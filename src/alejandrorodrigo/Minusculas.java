@@ -1,15 +1,15 @@
-package AlejandroRodrigo;
+package alejandrorodrigo;
 
 import java.io.IOException;
 import java.util.List;
 
-public class Reemplazador implements TransformadorTexto{
+public class Minusculas implements TransformadorTexto {
     static int line_final;
     static int line_init;
     int linea_inicial;
     int linea_final;
 
-    public Reemplazador(){}
+    public Minusculas(){}
 
     public void introducirLineas(int linea_init, int linea_final){
         this.linea_inicial=linea_init;
@@ -19,14 +19,15 @@ public class Reemplazador implements TransformadorTexto{
     public static void main(String[] args) throws IOException {
         line_init = Integer.parseInt(args[0]);
         line_final = Integer.parseInt(args[1]);
-        Reemplazador proceso = new Reemplazador();
-        proceso.transformador(EjercicioLibro.lecturaArchivo(line_init,line_final));
+        Minusculas proceso = new Minusculas();
+        proceso.transformador(EjercicioLibro.lecturaArchivo(line_init, line_final));
     }
 
     @Override
     public void transformador(List<String> texto) {
-        for (String line: texto){
-            System.out.println(line.replaceAll("Alice","PACO"));
+        for (String line : texto) {
+            System.out.println(line.toLowerCase());
+
         }
     }
 }

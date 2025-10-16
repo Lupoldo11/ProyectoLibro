@@ -1,7 +1,6 @@
-package AlejandroRodrigo;
+package alejandrorodrigo;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Transformador{
     private String programa;
